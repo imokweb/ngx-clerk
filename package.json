@@ -11,6 +11,18 @@
     "publish": "npm run build && cd dist/ngx-clerk-imok && npm publish"
   },
   "private": false,
+  "main": "dist/ngx-clerk-imok/fesm2022/ngx-clerk-imok.mjs",
+  "module": "dist/ngx-clerk-imok/fesm2022/ngx-clerk-imok.mjs",
+  "typings": "dist/ngx-clerk-imok/index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./dist/ngx-clerk-imok/index.d.ts",
+      "default": "./dist/ngx-clerk-imok/fesm2022/ngx-clerk-imok.mjs"
+    }
+  },
   "dependencies": {
     "@angular/animations": "^19.0.5",
     "@angular/common": "^19.0.5",

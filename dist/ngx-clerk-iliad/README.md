@@ -1,6 +1,6 @@
-# ngx-clerk-imok
+# ngx-clerk-iliad
 
-Welcome to **ngx-clerk-imok**, an unofficial Angular package that integrates with [Clerk](https://clerk.com/).
+Welcome to **ngx-clerk-iliad**, an unofficial Angular package that integrates with [Clerk](https://clerk.com/).
 
 ### ⚠️ Disclaimer: Fork of anagstef/ngx-clerk. This unofficial package is not affiliated with Clerk.com. It is an unofficial project that aims to provide a seamless integration of Clerk features into Angular applications.
 
@@ -11,22 +11,22 @@ Welcome to **ngx-clerk-imok**, an unofficial Angular package that integrates wit
 
 ## Installation
 
-To install `ngx-clerk-imok`, run the following command in your project directory:
+To install `ngx-clerk-iliad`, run the following command in your project directory:
 
 ```bash
-npm i ngx-clerk-imok
+npm i ngx-clerk-iliad
 ```
 
 ## Getting Started
 
-To begin using `ngx-clerk-imok` in your project, follow these steps:
+To begin using `ngx-clerk-iliad` in your project, follow these steps:
 1. Create an app in [Clerk Dashboard](https://dashboard.clerk.com/) and get the Publishable Key.
 2. **Inject the ClerkService**: In your `app.component.ts`, inject the `ClerkService` and call its `__init` method. You need to provide at least the Publishable Key and, optionally, any `ClerkOptions`.
 ```typescript
 // Example: app.component.ts
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ClerkService } from 'ngx-clerk-imok';
+import { ClerkService } from 'ngx-clerk-iliad';
 
 @Component({
   selector: 'app-root',
@@ -49,7 +49,7 @@ export class AppComponent {
 ```typescript
 // Example: app-routes.ts
 import { Routes } from '@angular/router';
-import { catchAllRoute, AuthGuardService } from 'ngx-clerk-imok';
+import { catchAllRoute, AuthGuardService } from 'ngx-clerk-iliad';
 import { UserProfilePageComponent } from './pages/user-profile-page.component';
 import { HomePageComponent } from './pages/home-page.component';
 
@@ -89,10 +89,10 @@ export const routes: Routes = [
 
 ## Remaining Tasks
 
-While `ngx-clerk-imok` aims to provide a comprehensive solution for integrating Clerk into Angular applications, there are several areas that are still under development:
+While `ngx-clerk-iliad` aims to provide a comprehensive solution for integrating Clerk into Angular applications, there are several areas that are still under development:
 
 - Enhanced API for Custom Pages.
 - Implement support for Organization multidomain and proxy features.
 - Add support for Server-Side Rendering (SSR) and Static Site Generation (SSG).
 
-We welcome contributions and suggestions from the community to help us address these tasks and improve `ngx-clerk-imok`.
+We welcome contributions and suggestions from the community to help us address these tasks and improve `ngx-clerk-iliad`.
