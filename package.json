@@ -1,6 +1,6 @@
 {
   "name": "ngx-clerk-iliad",
-  "version": "0.3",
+  "version": "0.2.8",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
