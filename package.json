@@ -1,14 +1,14 @@
 {
-  "name": "ngx-clerk-iliad",
+  "name": "ngx-clerk-imok",
   "version": "0.2.8",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && cp ./README.md ./dist/ngx-clerk-iliad/README.md",
+    "build": "ng build && node -e \"require('fs').copyFileSync('README.md','dist/ngx-clerk-imok/README.md')\"",
     "watch": "ng build --watch --configuration development",
-    "version:minor": "cd projects/ngx-clerk-iliad && npm version minor",
-    "version:patch": "cd projects/ngx-clerk-iliad && npm version patch",
-    "publish": "npm run build && cd dist/ngx-clerk-iliad && npm publish"
+    "version:minor": "cd projects/ngx-clerk-imok && npm version minor",
+    "version:patch": "cd projects/ngx-clerk-imok && npm version patch",
+    "publish": "npm run build && cd dist/ngx-clerk-imok && npm publish"
   },
   "private": false,
   "dependencies": {
@@ -38,6 +38,6 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^19.0.1",
-    "typescript": "^5.7.3"
+    "typescript": "~5.6.3"
   }
 }

@@ -1,0 +1,37 @@
+{
+  "name": "ngx-clerk-imok",
+  "version": "0.2.8",
+  "description": "Unofficial Clerk.com SDK for Angular",
+  "keywords": [
+    "clerk",
+    "typescript",
+    "angular",
+    "auth",
+    "authentication",
+    "passwordless",
+    "session",
+    "jwt"
+  ],
+  "homepage": "https://github.com/iliasaddab/ngx-clerk-imok",
+  "bugs": {
+    "url": "https://github.com/iliasaddab/ngx-clerk-imok/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iliasaddab/ngx-clerk-imok.git",
+    "directory": "projects/ngx-clerk-imok"
+  },
+  "license": "MIT",
+  "author": "https://github.com/iliasaddab",
+  "dependencies": {
+    "@clerk/shared": "2.20.6",
+    "@clerk/types": "4.40.2",
+    "tslib": "2.8.1"
+  },
+  "peerDependencies": {
+    "@angular/common": "^19.0.0",
+    "@angular/core": "^19.0.0",
+    "@angular/router": "^19.0.0"
+  },
+  "sideEffects": false
+}
