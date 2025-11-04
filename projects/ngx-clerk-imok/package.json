@@ -1,7 +1,7 @@
 {
   "name": "ngx-clerk-imok",
-  "version": "0.2.8",
-  "description": "Unofficial Clerk.com SDK for Angular",
+  "version": "0.3.0",
+  "description": "Unofficial Clerk.com SDK for Angular by ImOK forked from Ilias Addab",
   "keywords": [
     "clerk",
     "typescript",
@@ -12,17 +12,17 @@
     "session",
     "jwt"
   ],
-  "homepage": "https://github.com/iliasaddab/ngx-clerk-imok",
+  "homepage": "https://github.com/imokweb/ngx-clerk-imok",
   "bugs": {
-    "url": "https://github.com/iliasaddab/ngx-clerk-imok/issues"
+    "url": "https://github.com/imokweb/ngx-clerk-imok/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iliasaddab/ngx-clerk-imok.git",
+    "url": "git+https://github.com/imokweb/ngx-clerk-imok.git",
     "directory": "projects/ngx-clerk-imok"
   },
   "license": "MIT",
-  "author": "https://github.com/iliasaddab",
+  "author": "https://github.com/imokweb",
   "dependencies": {
     "@clerk/shared": "2.20.6",
     "@clerk/types": "4.40.2",
