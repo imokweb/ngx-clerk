@@ -8,7 +8,8 @@ import { SignInProps } from '@clerk/types';
     imports: [],
     template: `<div #ref></div>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
-    encapsulation: ViewEncapsulation.None
+    encapsulation: ViewEncapsulation.None,
+    standalone: true
 })
 export class ClerkSignInComponent implements AfterViewInit, OnDestroy {
   @ViewChild('ref') ref: ElementRef | null = null; 

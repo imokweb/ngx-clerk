@@ -8,7 +8,8 @@ import { UserProfileProps } from '@clerk/types';
     imports: [],
     template: `<div #ref></div>`,
     changeDetection: ChangeDetectionStrategy.OnPush,
-    encapsulation: ViewEncapsulation.None
+    encapsulation: ViewEncapsulation.None,
+    standalone: true
 })
 export class ClerkUserProfileComponent implements AfterViewInit, OnDestroy {
   @ViewChild('ref') ref: ElementRef | null = null;
