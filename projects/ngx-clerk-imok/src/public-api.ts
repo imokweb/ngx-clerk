@@ -1,5 +1,6 @@
 // Clerk Components
 export { ClerkSignInComponent } from './lib/components/sign-in.component';
+export { ClerkSignInNativeComponent } from './lib/components/sign-in-native.component';
 export { ClerkSignUpComponent } from './lib/components/sign-up.component';
 export { ClerkUserProfileComponent } from './lib/components/user-profile.component';
 export { ClerkUserButtonComponent } from './lib/components/user-button.component';
