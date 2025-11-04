@@ -1,31 +1,31 @@
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, Input, OnDestroy, ViewChild, ViewEncapsulation } from '@angular/core';
 import { ClerkService } from '../services/clerk.service';
 import { take } from 'rxjs';
-import { OrganizationListProps } from '@clerk/types';
+import { UserProfileProps } from '@clerk/types';
 
 @Component({
-  selector: 'clerk-organization-list',
-  standalone: true,
-  imports: [],
-  template: `<div #ref></div>`,
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None
+    selector: 'clerk-user-profile',
+    imports: [],
+    template: `<div #ref></div>`,
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    encapsulation: ViewEncapsulation.None,
+    standalone: true
 })
-export class ClerkOrganizationListComponent implements AfterViewInit, OnDestroy {
+export class ClerkUserProfileComponent implements AfterViewInit, OnDestroy {
   @ViewChild('ref') ref: ElementRef | null = null;
-  @Input() props: OrganizationListProps | undefined;
+  @Input() props: UserProfileProps | undefined;
 
   constructor(private _clerk: ClerkService) {}
 
   ngAfterViewInit() {
     this._clerk.clerk$.pipe(take(1)).subscribe((clerk) => {
-      clerk.mountOrganizationList(this.ref?.nativeElement, this.props);
+      clerk.mountUserProfile(this.ref?.nativeElement, this.props);
     });
   }
 
   ngOnDestroy() {
     this._clerk.clerk$.pipe(take(1)).subscribe((clerk) => {
-      clerk.unmountOrganizationList(this.ref?.nativeElement);
+      clerk.unmountUserProfile(this.ref?.nativeElement);
     });
   }
 }

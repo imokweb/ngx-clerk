@@ -10,8 +10,8 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "paths": {
-      "ngx-clerk": [
-        "./dist/ngx-clerk"
+      "ngx-clerk-iliad": [
+        "./dist/ngx-clerk-iliad"
       ]
     },
     "esModuleInterop": true,

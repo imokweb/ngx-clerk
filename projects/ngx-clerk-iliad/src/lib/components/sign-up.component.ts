@@ -4,12 +4,12 @@ import { take } from 'rxjs';
 import { SignUpProps } from '@clerk/types';
 
 @Component({
-  selector: 'clerk-sign-up',
-  standalone: true,
-  imports: [],
-  template: `<div #ref></div>`,
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None
+    selector: 'clerk-sign-up',
+    imports: [],
+    template: `<div #ref></div>`,
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    encapsulation: ViewEncapsulation.None,
+    standalone: true,
 })
 export class ClerkSignUpComponent implements AfterViewInit, OnDestroy {
   @ViewChild('ref') ref: ElementRef | null = null; 

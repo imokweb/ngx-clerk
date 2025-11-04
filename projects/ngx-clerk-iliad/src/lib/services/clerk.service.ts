@@ -16,11 +16,29 @@ interface BrowserClerk extends HeadlessBrowserClerk {
   components: any;
 }
 
+// declare global {
+//   interface Window {
+//     Clerk: HeadlessBrowserClerk | BrowserClerk;
+//   }
+// }
+
 declare global {
   interface Window {
     Clerk: HeadlessBrowserClerk | BrowserClerk;
   }
 }
+
+// declare global {
+//   interface Window {
+//     readonly Clerk: HeadlessBrowserClerk | BrowserClerk;
+//   }
+// }
+
+// declare global {
+//   interface Window {
+//     Clerk: any;
+//   }
+// }
 
 @Injectable({
   providedIn: 'root'
@@ -30,14 +48,14 @@ export class ClerkService {
   public readonly client$: ReplaySubject<ClientResource | undefined> = new ReplaySubject(1);
   public readonly session$: ReplaySubject<ActiveSessionResource | undefined | null> = new ReplaySubject(1);
   public readonly user$: ReplaySubject<UserResource | undefined | null> = new ReplaySubject(1);
-  public readonly organization$: ReplaySubject<OrganizationResource | undefined  | null> = new ReplaySubject(1);
+  public readonly organization$: ReplaySubject<OrganizationResource | undefined | null> = new ReplaySubject(1);
 
   private _initialized: boolean = false;
 
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
     private _router: Router,
-    private _ngZone: NgZone) {} 
+    private _ngZone: NgZone) { }
 
   public __init(options: ClerkInitOptions) {
     if (!isPlatformBrowser(this.platformId)) {
@@ -55,7 +73,7 @@ export class ClerkService {
           const url = new URL(to.replace('#/', ''), 'http://dummy.clerk');
           const queryParams = Object.fromEntries((url.searchParams as any).entries());
           return this._router.navigate([url.pathname], { queryParams });
-        }), 
+        }),
         routerReplace: (to: string) => this._ngZone.run(() => {
           const url = new URL(to.replace('#/', ''), 'http://dummy.clerk');
           const queryParams = Object.fromEntries((url.searchParams as any).entries());

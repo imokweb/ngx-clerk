@@ -4,12 +4,11 @@ import { take } from 'rxjs';
 import { OrganizationProfileProps } from '@clerk/types';
 
 @Component({
-  selector: 'clerk-organization-profile',
-  standalone: true,
-  imports: [],
-  template: `<div #ref></div>`,
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None
+    selector: 'clerk-organization-profile',
+    imports: [],
+    template: `<div #ref></div>`,
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    encapsulation: ViewEncapsulation.None
 })
 export class ClerkOrganizationProfileComponent implements AfterViewInit, OnDestroy {
   @ViewChild('ref') ref: ElementRef | null = null;
