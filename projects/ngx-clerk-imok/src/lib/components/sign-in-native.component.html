@@ -1,0 +1,7 @@
+<button type="button" (click)="openHostedSignIn()" [disabled]="busy" style="width:100%;padding:12px 16px;border:none;border-radius:8px;background:#3880ff;color:#fff;font-size:16px">
+  {{ busy ? 'Opening secure sign-in…' : 'Sign in' }}
+</button>
+
+<div *ngIf="error" style="color:#eb445a;margin-top:8px">
+  {{ error }}
+</div>

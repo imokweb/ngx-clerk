@@ -1,6 +1,6 @@
 {
   "name": "ngx-clerk-imok",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Unofficial Clerk.com SDK for Angular by ImOK forked from Ilias Addab",
   "keywords": [
     "clerk",
@@ -31,7 +31,8 @@
   "peerDependencies": {
     "@angular/common": "^19.0.0",
     "@angular/core": "^19.0.0",
-    "@angular/router": "^19.0.0"
+    "@angular/router": "^19.0.0",
+    "@capacitor/core": "^6.2.1"
   },
   "sideEffects": false
 }
